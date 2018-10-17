@@ -303,3 +303,12 @@ EXAMPLE:
 -------
 
 The subdir example contains a full example (currently DOS only).
+
+
+
+BUILDING
+--------
+
+rm -rf `pwd`/_build/ `pwd`/_install/
+cmake -H`pwd` -B`pwd`/_build/ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=`pwd`/_install/
+cmake --build `pwd`/_build/ --target all --config Debug -- -j 1
