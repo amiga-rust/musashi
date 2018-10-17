@@ -20,3 +20,6 @@ indent_size = 4
 [{*.c,*.h,*.cpp,*.hpp}]
 indent_style = space
 indent_size = 4
+
+[*.{yaml,yml}
+indent_size = 2
