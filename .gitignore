@@ -1,20 +1,25 @@
-build/*
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata
-profile
-*.moved-aside
-DerivedData
+# Add directories, files, and symbolic links which should not be stored within
+# the repository here.
+
+# Helper files requiring special attention
+!.gitignore
+!.gitattributes
+
+# Project files
+/.idea/
+/.vscode/
+
+# OS specific temporary files
 .DS_Store
 Thumbs.db
-.svn
-.BridgeSort
-*.bak
-.~*
-*.orig
+
+# Generated directories
+/_build/
+/_install/
+
+# Generated files
+m68kopac.c
+m68kopdm.c
+m68kopnz.c
+m68kops.c
+m68kops.h
